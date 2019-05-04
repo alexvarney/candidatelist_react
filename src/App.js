@@ -104,6 +104,13 @@ const CandidateCell = ({candidate, children}) => {
 }
 
 const PolicyTable = ({candidate, policies}) => {
+
+  const displayTextMap = {
+    'for': 'For',
+    'mixed': 'Mixed',
+    'against': 'Against',
+  }
+
   return(
     <div className="policy-block">
       <h3>Positions:</h3>
@@ -111,7 +118,7 @@ const PolicyTable = ({candidate, policies}) => {
         <div>
         {policy.positions.filter((position)=> position.name === candidate.id && position.status !== 'none').map((position)=>
           <div>
-            <p><strong>{policy.display}</strong><span className={`text-position-${position.status}`}>{position.status}</span></p>
+            <p><strong>{policy.display}</strong><span className={`text-position-${position.status}`}>{displayTextMap[position.status]}</span></p>
             <p>{position.description}</p>
           </div>
         )}

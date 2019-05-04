@@ -103,14 +103,17 @@ input[type=text]:focus {
 .text-position-for{
   color: green;
   margin-left: 0.6em;
+  text-transform: capitalize ;
 }
 
 .text-position-mixed{
   color: rgb(187, 128, 0);
   margin-left: 0.6em;
+  text-transform: capitalize !important;
 }
 
 .text-position-against{
   color: red;
   margin-left: 0.6em;
+  text-transform: capitalize !important;
 }
