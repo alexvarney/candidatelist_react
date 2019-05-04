@@ -230,7 +230,7 @@ export default [
         state: 'Maryland',
         campaignSlogan: 'Focus on the future',
         status: 'declared',
-        headshotImage: 'delaney.jpg',
+        headshotImage: 'delaney.png',
         polling: 1,
     },
   ];

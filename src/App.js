@@ -7,28 +7,34 @@ import Candidates from './Candidates'
 export default class App extends Component {
   constructor(props){
     super(props);
-    this.state = {candidates: Candidates}
+    this.state = {
+      candidates: Candidates,
+      searchValue: '',
+    }
 
-    this.getStatusFilter.bind(this);
   }
 
-  getStatusFilter(status){
-    return (item) => item.status === status
+  onSearchChange = (e) =>{
+    this.setState({searchValue: e.target.value});
+
   }
 
   render() {
+
+    const newList = this.state.candidates.filter((item)=>item.name.toLowerCase().includes(this.state.searchValue.toLowerCase()));
+
     return (
       <div className="App">
         <h1>Welcome to CandidateList</h1>
-
+        <Input value={this.state.searchValue} onInputChange={this.onSearchChange} placeholder={"Search"}/>
         <h2>Declared</h2>
-        <CandidateTable list={this.state.candidates.sort((a,b)=>a.polling > b.polling ? -1 : 1)} statusName={'declared'}/>
+        <CandidateTable list={newList.sort((a,b)=>a.polling > b.polling ? -1 : 1)} statusName={'declared'}/>
 
         <h2>Potential</h2>
-        <CandidateTable list={this.state.candidates} statusName={'undeclared'}/>
+        <CandidateTable list={newList} statusName={'undeclared'}/>
 
         <h2>Dropped</h2>
-        <CandidateTable list={this.state.candidates} statusName={'dropped'}/>
+        <CandidateTable list={newList} statusName={'dropped'}/>
       </div>
     )
   }
@@ -42,9 +48,9 @@ const CandidateTable = ({list, statusName}) =>
   return(
   <div className="candidateTable">
     {list.filter(makeStatusFilter).map(candidate => 
-        <div key={candidate.name} className="table-row flex-parent">
+        <div key={candidate.id} className="table-row flex-parent">
           <div>
-            <img className="candidate-image" alt="headshot" src={(candidate.headshotImage) ? `headshots/${candidate.headshotImage}`: 'https://via.placeholder.com/150'}></img>
+            <img className="candidate-image" alt={'the face of ' + candidate.name} src={(candidate.headshotImage) ? `headshots/${candidate.headshotImage}`: 'https://via.placeholder.com/150'}></img>
           </div>
           <div className="candidate-info">
             <div className="candidate-headline flex-parent">
@@ -61,4 +67,15 @@ const CandidateTable = ({list, statusName}) =>
         </div>
       )}
   </div>)
+}
+
+const Input = ({value, onInputChange, placeholder}) => {
+  return(
+    <form className="inputForm">
+      <input type="text" 
+        value={value} 
+        onChange={onInputChange}
+        placeholder={placeholder}></input>
+    </form>
+  )
 }
