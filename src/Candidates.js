@@ -233,4 +233,13 @@ export default [
         headshotImage: 'delaney.png',
         polling: 1,
     },
+    {
+        name: 'Jay Inslee',
+        id: 'jinslee',
+        state: 'Washington',
+        campaignSlogan: 'Focus on the future',
+        status: 'declared',
+        headshotImage: 'inslee.png',
+        polling: 1,
+    },
   ];
