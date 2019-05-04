@@ -224,4 +224,13 @@ export default [
         headshotImage: 'moulton.png',
         polling: -1,
     },
+    {
+        name: 'John Delaney',
+        id: 'jdelaney',
+        state: 'Maryland',
+        campaignSlogan: 'Focus on the future',
+        status: 'declared',
+        headshotImage: 'delaney.jpg',
+        polling: 1,
+    },
   ];
