@@ -366,4 +366,126 @@ export default [
             },
         ]
     },
+    {
+        id: 'expand_supreme_court',
+        display: 'Expand the Supreme Court',
+        description: 'The Supreme Court of the United States (SCOTUS) is the highest court in the federal judiciary of the United States.The Court has the power of judicial review, the ability to invalidate a statute for violating a provision of the Constitution or an executive act for being unlawful. However, it may act only within the context of a case in an area of law over which it has jurisdiction. The court may decide cases having political overtones, but it has ruled that it does not have power to decide nonjusticiable political questions.As set by the Judiciary Act of 1869, the Court consists of the Chief Justice of the United States and eight associate justices. Each justice has lifetime tenure, meaning they remain on the Court until they resign, retire, die, or are removed from office. When a vacancy occurs, the president, with the advice and consent of the Senate, appoints a new justice. Many believe 8 people is not enough to fully represent 350 million people. As such, about half the Democratic candidates are for expanding the Supreme Court.',
+        positions: [
+            {
+                name: 'mearth',
+                status: 'none',
+                description: '',
+            },
+            {
+                name: 'mbennet',
+                status: 'none',
+                description: '',
+            },
+            {
+                name: 'jbiden',
+                status: 'none',
+                description: '',
+            },
+            {
+                name: 'cbooker',
+                status: 'against',
+                description: '"...In presidential elections, the person  with the most votes should be the President."',
+            },
+            {
+                name: 'pbuttigieg',
+                status: 'for',
+                description: '"It\'s gotta go."',
+            },
+            {
+                name: 'jcastro',
+                status: 'for',
+                description: 'Tweeted support of dissolution, among other voter reforms.'
+            },
+            {
+                name: 'jdelaney',
+                status: 'against',
+                description: '"...trying to abolish the electoral college now is impractical.',
+            },
+            {
+                name: 'tgabbard',
+                status: 'mixed',
+                description: 'Open to the conversation, believes there are pros and cons to the system.',
+            },
+            {
+                name: 'kgillibrand',
+                status: 'for',
+                description: 'Unknown',
+            },
+            {
+                name: 'mgravel',
+                status: 'for',
+                description: 'Abolish Electoral College, replace weith a system of direct election.',
+            },
+            {
+                name: 'kharris',
+                status: 'mixed',
+                description: 'I\'m open to the discussion.',
+            },
+            {
+                name: 'jhickenlooper',
+                status: 'against',
+                description: '"...there is no possibility of aboloshing it...so we need to focus on expanding the Democratic electorate.',
+            },
+            {
+                name: 'jinslee',
+                status: 'for',
+                description: '"It ought to be one person, one vote."',
+            },
+            {
+                name: 'aklobuchar',
+                status: 'mixed',
+                description: 'Told the Post she is "open to eliminating."',
+            },
+            {
+                name: 'wmessam',
+                status: 'for',
+                description: '"We should do away with it and reform our elections.',
+            },
+            {
+                name: 'smoulton',
+                status: 'for',
+                description: '"We need a New Voting Rights Act in America."',
+            },
+            {
+                name: 'borourke',
+                status: 'mixed',
+                description: 'Eliminate long-term, short-term award electors proportionally',
+            },
+            {
+                name: 'tryan',
+                status: 'against',
+                description: '',
+            },
+            {
+                name: 'bernie',
+                status: 'mixed',
+                description: '"I believe that we need to reexamine the concept of the Electoral College."',
+            },
+            {
+                name: 'eswalwell',
+                status: 'none',
+                description: '',
+            },
+            {
+                name: 'ewarren',
+                status: 'for',
+                description: '"Every vote matters - and that\'s why I have called for an end to the Electoral College..."',
+            },
+            {
+                name: 'mwilliamson',
+                status: 'for',
+                description: '"...at this point there is too much risk to our democracy when the popular vote can be so eaily overridden."',
+            },
+            {
+                name: 'ayang',
+                status: 'against',
+                description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
+            },
+        ]
+    },
 ]

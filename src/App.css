@@ -31,18 +31,30 @@ h1, h2 {
   flex-basis: 60%;
 }
 
-.headline-right{
-  flex-basis: 40%;
+.headline-left{
+  flex-grow: 1;
 }
 
 .candidate-state{
   color: #2a2a2a;
 }
 
+.candidate-polling{
+  font-style: italic;
+  text-align: right;
+  margin-left: 2em;
+}
+
 .candidate-headline{
   display: block;
   width: 100%;
 }
+
+.candidate-info{
+  padding: 0em 2em 0em 2.0em;
+  width: 100%;
+}
+
 
 .flex-parent{
   display: flex;
@@ -53,17 +65,11 @@ h1, h2 {
   height: 128px;
   border: 3px solid rgb(0, 0, 24);
   border-radius: 64px;
+  margin: 1.2em 0em 0em 1em;
 }
 
-.candidate-info{
-  padding: 10px 20px 0px 20px;
-  width: 100%;
-}
-
-.candidate-polling{
-  font-style: italic;
-  text-align: right;
-  float: right;
+.candidate-age{
+  margin-right: 1em;
 }
 
 .candidate-slogan{
@@ -151,4 +157,9 @@ input[type=text]:focus {
 
 .policy-candidate-name{
   font-weight: bold;
+}
+
+.position-title{
+  font-weight: bold;
+  font-size: 1.5em;
 }

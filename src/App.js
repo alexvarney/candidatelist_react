@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Candidates from './Candidates'
-import PolicyList from './Policies'
+import Candidates from './Candidates';
+import PolicyList from './Policies';
+import moment from 'moment';
+
 
 export default class App extends Component {
   constructor(props){
@@ -108,6 +110,10 @@ const ViewControlRadio = ({value, onChecked}) => {
 }
 
 const CandidateCell = ({candidate, children}) => {
+
+  let years = moment().diff(candidate.dob, 'years');
+
+
   return(
     <div key={candidate.id} className="table-row flex-parent">
       <div>
@@ -115,14 +121,15 @@ const CandidateCell = ({candidate, children}) => {
       </div>
       <div className="candidate-info">
         <div className="candidate-headline flex-parent">
-          <span className="headline-left candidate-name">{candidate.name}</span>
-          <div className="headline-right">
+          <p className="headline-left">
+            <span className="candidate-name">{candidate.name}</span><br/>
+            <span className="candidate-slogan">{candidate.campaignSlogan}</span>
+          </p>
+          <p className="headline-right">
+            <span className="candidate-age">Age {years}</span>
             <span className="candidate-state">{candidate.state}</span>
-            <span className="candidate-polling">{(candidate.polling !== -1) ? `${candidate.polling}%`:''}</span>
-          </div>
-        </div>
-        <div>
-          <span className="candidate-slogan">{candidate.campaignSlogan}</span>
+            <span className="candidate-polling">{(candidate.polling !== -1) ? `${candidate.polling}%`:''}</span><br/>
+          </p>
         </div>
         <div>
           {children}
@@ -142,7 +149,7 @@ const PolicyTable = ({candidate, policies}) => {
 
   return(
     <div className="policy-block">
-      <h3>Positions:</h3>
+      <p className="position-title">Positions:</p>
       {policies.map((policy)=>
         <div key={policy.id}>
           {policy.positions.filter((position)=> position.name === candidate.id && position.status !== 'none').map((position)=>
@@ -158,7 +165,10 @@ const PolicyTable = ({candidate, policies}) => {
 }
 
 const getCandidateName = (id, candidates) => {
-  return candidates.filter((i) => i.id === id)[0].name;
+  
+  const filtered = candidates.filter((i) => i.id === id);
+  return (filtered.length > 0) ? filtered[0].name : 'Unknown';
+  
 }
 
 const PolicyExpander = ({policy, candidates}) => {
