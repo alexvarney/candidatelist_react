@@ -165,6 +165,7 @@ const PolicyExpander = ({policy, candidates}) => {
   return(
   <div className="policyExpander">
     <h1>{policy.display}</h1>
+    <p className="policy-description-text">{policy.description}</p>
     {policy.positions.filter(i=>i.status !== 'none' && i.status !== '').map((position) =>
     <div key={`${policy.id}-${position.name}`}>
       <p><span className="candidate-name">{getCandidateName(position.name, candidates)}</span> <span className={`text-position-${position.status}`}>{position.status}</span></p>

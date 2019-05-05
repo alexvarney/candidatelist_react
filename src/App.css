@@ -131,3 +131,7 @@ input[type=text]:focus {
 .policyExpander {
   padding: 10px 40px 20px 40px;
 }
+
+.policy-description-text{
+  text-align: center;
+}

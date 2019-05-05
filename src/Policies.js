@@ -2,31 +2,32 @@ export default [
     {
         id: 'medicare_for_all',
         display: 'Medicare for All',
+        description: 'Medicate everyone',
         positions: [
             {
                 name: 'mearth',
                 status: 'for',
-                description: 'Institute M4A, regulate drug costs',
+                description: 'Institute Medicare for All, regulate drug costs',
             },
             {
                 name: 'mbennet',
                 status: 'against',
-                description: 'For expanding Obamacare, providing public option.',
+                description: 'For expanding Affordable Care Act, providing public option.',
             },
             {
                 name: 'jbiden',
                 status: 'against',
-                description: 'Expand Obamacare',
+                description: 'Expand Affordable Care Act',
             },
             {
                 name: 'cbooker',
                 status: 'mixed',
-                description: 'Expand Obamacare, provide public option',
+                description: 'Expand Affordable Care Act, provide public option',
             },
             {
                 name: 'pbuttigieg',
                 status: 'mixed',
-                description: 'Expand Obamacare, provide public option',
+                description: 'Expand Affordable Care Act, provide public option',
             },
             {
                 name: 'jcastro',
@@ -36,12 +37,12 @@ export default [
             {
                 name: 'jdelaney',
                 status: 'mixed',
-                description: 'Expand Obamacare, provide public option',
+                description: 'Expand Affordable Care Act, provide public option',
             },
             {
                 name: 'tgabbard',
                 status: 'for',
-                description: 'Institute M4A, keep supplemental private coverage',
+                description: 'Institute Medicare for All, keep supplemental private coverage',
             },
             {
                 name: 'kgillibrand',
@@ -51,32 +52,32 @@ export default [
             {
                 name: 'mgravel',
                 status: 'for',
-                description: 'Institute M4A.',
+                description: 'Institute Medicare for All.',
             },
             {
                 name: 'kharris',
                 status: 'for',
-                description: 'Institure M4A, keep private supplemental coverage for now.',
+                description: 'Institure Medicare for All, keep private supplemental coverage for now.',
             },
             {
                 name: 'jhickenlooper',
                 status: 'against',
-                description: 'Keep private insurance, expand coverage through ACA.',
+                description: 'Keep private insurance, expand coverage through Affordable Care Act.',
             },
             {
                 name: 'jinslee',
                 status: 'against',
-                description: 'Expand ACA, provide public option.',
+                description: 'Expand Affordable Care Act, provide public option.',
             },
             {
                 name: 'aklobuchar',
                 status: 'mixed',
-                description: 'Expand ACA, lower Medicaid eligibility age, provide public option.',
+                description: 'Expand Affordable Care Act, lower Medicaid eligibility age, provide public option.',
             },
             {
                 name: 'wmessam',
                 status: 'mixed',
-                description: 'Supports \'Medicare for America\', A mix of M4A and private insurance.',
+                description: 'Supports \'Medicare for America\', A mix of Medicare for All and private insurance.',
             },
             {
                 name: 'smoulton',
@@ -124,6 +125,7 @@ export default [
     {
         id: 'green_new_deal',
         display: 'Green New Deal',
+        description: 'Colour everything green!',
         positions: [
             {
                 name: 'mearth',
@@ -173,7 +175,7 @@ export default [
             {
                 name: 'mgravel',
                 status: 'for',
-                description: 'Strong environmentalist, supports GND and many other climate legislations.',
+                description: 'Strong environmentalist, supports Green New Deal and many other climate legislations.',
             },
             {
                 name: 'kharris',
@@ -245,6 +247,7 @@ export default [
     {
         id: 'dissolve_electoral_college',
         display: 'Dissolve the Electoral College',
+        description: 'Throw them all in acid.',
         positions: [
             {
                 name: 'mearth',
@@ -254,7 +257,7 @@ export default [
             {
                 name: 'mbennet',
                 status: 'for',
-                description: 'Called for dissolution of SC in early campaign ad.',
+                description: 'Called for dissolution of Supreme Court in early campaign ad.',
             },
             {
                 name: 'jbiden',
@@ -294,7 +297,7 @@ export default [
             {
                 name: 'mgravel',
                 status: 'for',
-                description: 'Abolish EC, replace weith a system of direct election.',
+                description: 'Abolish Electoral College, replace weith a system of direct election.',
             },
             {
                 name: 'kharris',
@@ -339,7 +342,7 @@ export default [
             {
                 name: 'bernie',
                 status: 'mixed',
-                description: '"I believe that we need to reexamine the concept of the electoral college."',
+                description: '"I believe that we need to reexamine the concept of the Electoral College."',
             },
             {
                 name: 'eswalwell',
@@ -349,7 +352,7 @@ export default [
             {
                 name: 'ewarren',
                 status: 'for',
-                description: '"Every vote matters - and that\'s why I have called for an end to the electoral college..."',
+                description: '"Every vote matters - and that\'s why I have called for an end to the Electoral College..."',
             },
             {
                 name: 'mwilliamson',
@@ -359,7 +362,7 @@ export default [
             {
                 name: 'ayang',
                 status: 'against',
-                description: 'Abolishing the electoral college would be difficult and would wind up further favoring high-density high-population areas..."',
+                description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
             },
         ]
     },
