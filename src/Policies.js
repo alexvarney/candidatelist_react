@@ -2,7 +2,7 @@ export default [
     {
         id: 'medicare_for_all',
         display: 'Medicare for All',
-        description: 'Medicate everyone',
+        description: 'Akin to Universal Health Care, Medicare for All is a plan to expand to a universal single-payer system. This will eliminate most types of private health insurance, but supplemental coverage may continue to exist.',
         positions: [
             {
                 name: 'mearth',
@@ -125,7 +125,7 @@ export default [
     {
         id: 'green_new_deal',
         display: 'Green New Deal',
-        description: 'Colour everything green!',
+        description: 'A proposed stimulus package to combat climate change and economic inequality. Key tenets involve transferring the country to 100% renewable energy, spurring growth in the green energy sector, and providing a living wage and paid family leave.',
         positions: [
             {
                 name: 'mearth',

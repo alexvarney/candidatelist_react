@@ -100,21 +100,22 @@ input[type=text]:focus {
   padding: none;
 }
 
+.text-position{
+  padding-left: 0.6em;
+}
+
 .text-position-for{
   color: green;
-  margin-left: 0.6em;
   text-transform: capitalize ;
 }
 
 .text-position-mixed{
   color: rgb(187, 128, 0);
-  margin-left: 0.6em;
   text-transform: capitalize !important;
 }
 
 .text-position-against{
   color: red;
-  margin-left: 0.6em;
   text-transform: capitalize !important;
 }
 
@@ -134,4 +135,20 @@ input[type=text]:focus {
 
 .policy-description-text{
   text-align: center;
+}
+
+.policy-flex-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.policy-flex-child{
+  width: 300px;
+}
+
+.policy-candidate-name{
+  font-weight: bold;
 }

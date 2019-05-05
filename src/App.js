@@ -147,7 +147,7 @@ const PolicyTable = ({candidate, policies}) => {
         <div key={policy.id}>
           {policy.positions.filter((position)=> position.name === candidate.id && position.status !== 'none').map((position)=>
             <div key={`${policy.id}-${position.name}`}>
-              <p><strong>{policy.display}</strong><span className={`text-position-${position.status}`}>{displayTextMap[position.status]}</span></p>
+              <p><strong>{policy.display}</strong><span className={`text-position text-position-${position.status}`}>{displayTextMap[position.status]}</span></p>
               <p>{position.description}</p>
             </div>
           )}
@@ -166,12 +166,17 @@ const PolicyExpander = ({policy, candidates}) => {
   <div className="policyExpander">
     <h1>{policy.display}</h1>
     <p className="policy-description-text">{policy.description}</p>
+    <div className="policy-flex-container">
     {policy.positions.filter(i=>i.status !== 'none' && i.status !== '').map((position) =>
-    <div key={`${policy.id}-${position.name}`}>
-      <p><span className="candidate-name">{getCandidateName(position.name, candidates)}</span> <span className={`text-position-${position.status}`}>{position.status}</span></p>
-      <p>{position.description}</p>
+    <div className="policy-flex-child" key={`${policy.id}-${position.name}`}>
+      <p>
+      <span className="policy-candidate-name">{getCandidateName(position.name, candidates)}</span><br/>
+      <span className={`text-position-${position.status}`}>{position.status}</span><br/>
+      <span>{position.description}</span>
+      </p>
     </div>
   )}
+  </div>
   </div>
   )
 }
