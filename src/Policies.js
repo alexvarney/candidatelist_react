@@ -70,8 +70,8 @@ export default [
             },
             {
                 name: 'aklobuchar',
-                status: 'Expand ACA, lower Medicaid eligibility age, provide public option.',
-                description: '',
+                status: 'mixed',
+                description: 'Expand ACA, lower Medicaid eligibility age, provide public option.',
             },
             {
                 name: 'wmessam',
@@ -289,7 +289,7 @@ export default [
             {
                 name: 'kgillibrand',
                 status: 'for',
-                description: '',
+                description: 'Unknown',
             },
             {
                 name: 'mgravel',

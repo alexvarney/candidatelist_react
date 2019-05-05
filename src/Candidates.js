@@ -15,7 +15,7 @@ export default [
         campaignSlogan: 'Brave Wins',
         status: 'declared',
         headshotImage: 'gillibrand.png',
-        polling: 0,
+        polling: 1,
     },
     {
         name: 'Julian Castro',
@@ -177,7 +177,7 @@ export default [
         campaignSlogan: 'Tim Ryan for America',
         status: 'declared',
         headshotImage: 'ryan.png',
-        polling: 0,
+        polling: 1,
     },
     {
         name: 'Mike Gravel',

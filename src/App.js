@@ -11,44 +11,57 @@ export default class App extends Component {
       candidates: Candidates,
       searchValue: '',
       policyList: PolicyList,
+      checkedView: 'candidates',
     }
-
   }
 
   onSearchChange = (e) =>{
     this.setState({searchValue: e.target.value});
-
   }
 
-  render() {
+  onViewChange = (e) => {
+    this.setState({checkedView: e});
+  }
 
+  getCandidateView = () => {
     const newList = this.state.candidates.filter((item)=>item.name.toLowerCase().includes(this.state.searchValue.toLowerCase()));
-
-    return (
+    return(
       <div className="App">
-        <h1>Welcome to CandidateList</h1>
-        <Input value={this.state.searchValue} onInputChange={this.onSearchChange} placeholder={"Search"}/>
-        <h2>Declared</h2>
-        <CandidateTable 
-          list={newList.sort((a,b)=>a.polling > b.polling ? -1 : 1)} 
-          statusName={'declared'}
-          policies={this.state.policyList}/>
+          <h1>Welcome to CandidateList</h1>
+          <ViewControlRadio value={this.state.checkedView} onChecked={this.onViewChange}/>
+          <Input value={this.state.searchValue} onInputChange={this.onSearchChange} placeholder={"Search"}/>
+          <h2>Declared</h2>
+          <CandidateTable 
+            list={newList.sort((a,b)=>a.polling > b.polling ? -1 : 1)} 
+            statusName={'declared'}
+            policies={this.state.policyList}/>
 
-        <h2>Potential</h2>
-        <CandidateTable 
-          list={newList} 
-          statusName={'undeclared'}
-          policies={this.state.policyList}
-          />
+          <h2>Potential</h2>
+          <CandidateTable 
+            list={newList} 
+            statusName={'undeclared'}
+            policies={this.state.policyList}
+            />
 
-        <h2>Dropped</h2>
-        <CandidateTable 
-          list={newList} 
-          statusName={'dropped'}
-          policies={this.state.policyList}
-          />
-      </div>
+          <h2>Dropped</h2>
+          <CandidateTable 
+            list={newList} 
+            statusName={'dropped'}
+            policies={this.state.policyList}
+            />
+        </div>
     )
+  }
+
+  getPolicyView = () =>
+    <div className="App">
+      <h1>Welcome to CandidateList</h1>
+      <ViewControlRadio value={this.state.checkedView} onChecked={this.onViewChange}/>
+      {PolicyList.map((item)=> <PolicyExpander policy={item} candidates={this.state.candidates}/>)}
+    </div>
+
+  render() {
+    return (this.state.checkedView === 'candidates') ? this.getCandidateView() : this.getPolicyView();
   }
 }
 
@@ -60,7 +73,7 @@ const CandidateTable = ({list, statusName, policies}) =>
   return (renderList.length > 0) 
     ? <div className="candidateTable">
         {renderList.map(candidate => {
-          return <CandidateCell candidate={candidate}> 
+          return <CandidateCell key={candidate.id} candidate={candidate}> 
             <PolicyTable candidate={candidate} policies={policies}></PolicyTable>
           </CandidateCell>})}
       </div> 
@@ -74,6 +87,21 @@ const Input = ({value, onInputChange, placeholder}) => {
         value={value} 
         onChange={onInputChange}
         placeholder={placeholder}></input>
+    </form>
+  )
+}
+
+const ViewControlRadio = ({value, onChecked}) => {
+  return(
+    <form className="view-control">
+      <div>
+        <input type="radio" value="candidates" checked={value === 'candidates'} onChange={() => onChecked('candidates')}/>
+        <label onClick={() => onChecked('candidates')} className="radio-label">Candidates</label>
+      </div>
+      <div>
+        <input type="radio" value="policies" checked={value === 'policies'} onChange={() => onChecked('policies')}/>
+        <label onClick={() => onChecked('policies')} className="radio-label">Policies</label>
+      </div>
     </form>
   )
 }
@@ -115,15 +143,33 @@ const PolicyTable = ({candidate, policies}) => {
     <div className="policy-block">
       <h3>Positions:</h3>
       {policies.map((policy)=>
-        <div>
-        {policy.positions.filter((position)=> position.name === candidate.id && position.status !== 'none').map((position)=>
-          <div>
-            <p><strong>{policy.display}</strong><span className={`text-position-${position.status}`}>{displayTextMap[position.status]}</span></p>
-            <p>{position.description}</p>
-          </div>
-        )}
+        <div key={policy.id}>
+          {policy.positions.filter((position)=> position.name === candidate.id && position.status !== 'none').map((position)=>
+            <div key={`${policy.id}-${position.name}`}>
+              <p><strong>{policy.display}</strong><span className={`text-position-${position.status}`}>{displayTextMap[position.status]}</span></p>
+              <p>{position.description}</p>
+            </div>
+          )}
         </div>
       )}
     </div>
+  )
+}
+
+const getCandidateName = (id, candidates) => {
+  return candidates.filter((i) => i.id === id)[0].name;
+}
+
+const PolicyExpander = ({policy, candidates}) => {
+  return(
+  <div>
+    <h1>{policy.display}</h1>
+    {policy.positions.filter(i=>i.status !== 'none' && i.status !== '').map((position) =>
+    <div>
+      <p><span className="candidate-name">{getCandidateName(position.name, candidates)}</span> <span className={`text-position-${position.status}`}>{position.status}</span></p>
+      <p>{position.description}</p>
+    </div>
+  )}
+  </div>
   )
 }
