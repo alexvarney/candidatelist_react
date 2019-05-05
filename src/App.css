@@ -127,3 +127,7 @@ input[type=text]:focus {
   display: block;
   margin-bottom: 1em;
 }
+
+.policyExpander {
+  padding: 10px 40px 20px 40px;
+}

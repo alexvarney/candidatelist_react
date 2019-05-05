@@ -20,7 +20,7 @@ export default class App extends Component {
   }
 
   onViewChange = (e) => {
-    this.setState({checkedView: e});
+    this.setState({checkedView: e, searchValue: ''});
   }
 
   getCandidateView = () => {
@@ -57,7 +57,8 @@ export default class App extends Component {
     <div className="App">
       <h1>Welcome to CandidateList</h1>
       <ViewControlRadio value={this.state.checkedView} onChecked={this.onViewChange}/>
-      {PolicyList.map((item)=> <PolicyExpander policy={item} candidates={this.state.candidates}/>)}
+      <Input value={this.state.searchValue} onInputChange={this.onSearchChange} placeholder={"Search"}/>
+      {PolicyList.filter(i=>i.display.toLowerCase().includes(this.state.searchValue.toLowerCase())).map((item)=> <PolicyExpander key={item.id} policy={item} candidates={this.state.candidates}/>)}
     </div>
 
   render() {
@@ -162,10 +163,10 @@ const getCandidateName = (id, candidates) => {
 
 const PolicyExpander = ({policy, candidates}) => {
   return(
-  <div>
+  <div className="policyExpander">
     <h1>{policy.display}</h1>
     {policy.positions.filter(i=>i.status !== 'none' && i.status !== '').map((position) =>
-    <div>
+    <div key={`${policy.id}-${position.name}`}>
       <p><span className="candidate-name">{getCandidateName(position.name, candidates)}</span> <span className={`text-position-${position.status}`}>{position.status}</span></p>
       <p>{position.description}</p>
     </div>
