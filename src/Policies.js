@@ -119,6 +119,16 @@ export default [
                 status: 'mixed',
                 description: 'Expand medicare, provide public option, transition to single payer.',
             },
+            {
+                name: 'sbullock',
+                status: '',
+                description: '',
+            },
+            {
+                name: 'bdeblasio',
+                status: '',
+                description: '',
+            },
 
         ]
     },
@@ -242,6 +252,16 @@ export default [
                 status: 'for',
                 description: 'Yang Tweeted he was "aligned and on board" with the Green New Deal.',
             },
+            {
+                name: 'sbullock',
+                status: '',
+                description: '',
+            },
+            {
+                name: 'bdeblasio',
+                status: '',
+                description: '',
+            },
         ]
     },
     {
@@ -364,6 +384,16 @@ export default [
                 status: 'against',
                 description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
             },
+            {
+                name: 'sbullock',
+                status: '',
+                description: '',
+            },
+            {
+                name: 'bdeblasio',
+                status: '',
+                description: '',
+            },
         ]
     },
     {
@@ -485,6 +515,16 @@ export default [
                 name: 'ayang',
                 status: 'against',
                 description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
+            },
+            {
+                name: 'sbullock',
+                status: '',
+                description: '',
+            },
+            {
+                name: 'bdeblasio',
+                status: '',
+                description: '',
             },
         ]
     },

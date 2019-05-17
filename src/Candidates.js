@@ -125,7 +125,7 @@ export default [
         state: 'New York',
         dob: '1961-05-08',
         campaignSlogan: '',
-        status: 'undeclared',
+        status: 'declared',
         headshotImage: 'deblasio.png',
         polling: -1,
     },
@@ -135,7 +135,7 @@ export default [
         state: 'Montana',
         dob: '1966-04-11',
         campaignSlogan: '',
-        status: 'undeclared',
+        status: 'declared',
         headshotImage: 'bullock.png',
         polling: -1,
     },
@@ -269,4 +269,7 @@ export default [
         headshotImage: 'inslee.png',
         polling: 1,
     },
+    {
+        name: ''
+    }
   ];
