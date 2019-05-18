@@ -121,12 +121,12 @@ export default [
             },
             {
                 name: 'sbullock',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
             {
                 name: 'bdeblasio',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
 
@@ -165,12 +165,12 @@ export default [
             {
                 name: 'jcastro',
                 status: 'for',
-                description: '"We\'re gonna say no to subsidizing big oil and say yes to passing a Green New Deal,'
+                description: '"We\'re gonna say no to subsidizing big oil and say yes to passing a Green New Deal,"'
             },
             {
                 name: 'jdelaney',
                 status: 'mixed',
-                description: '"I prefer a more specific, actionable plan...like the bipartisan carbon tax dividend bill I lead.',
+                description: '"I prefer a more specific, actionable plan...like the bipartisan carbon tax dividend bill I lead."',
             },
             {
                 name: 'tgabbard',
@@ -254,12 +254,12 @@ export default [
             },
             {
                 name: 'sbullock',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
             {
                 name: 'bdeblasio',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
         ]
@@ -282,7 +282,7 @@ export default [
             {
                 name: 'jbiden',
                 status: 'none',
-                description: '',
+                description: 'Joe Biden has not responded to this issue.',
             },
             {
                 name: 'cbooker',
@@ -302,7 +302,7 @@ export default [
             {
                 name: 'jdelaney',
                 status: 'against',
-                description: '"...trying to abolish the electoral college now is impractical.',
+                description: '"...trying to abolish the electoral college now is impractical."',
             },
             {
                 name: 'tgabbard',
@@ -312,7 +312,7 @@ export default [
             {
                 name: 'kgillibrand',
                 status: 'for',
-                description: 'Unknown',
+                description: 'Stated at a campaign rally she would abandon the Electoral College.',
             },
             {
                 name: 'mgravel',
@@ -327,7 +327,7 @@ export default [
             {
                 name: 'jhickenlooper',
                 status: 'against',
-                description: '"...there is no possibility of aboloshing it...so we need to focus on expanding the Democratic electorate.',
+                description: '"...there is no possibility of abolishing it...so we need to focus on expanding the Democratic electorate."',
             },
             {
                 name: 'jinslee',
@@ -342,7 +342,7 @@ export default [
             {
                 name: 'wmessam',
                 status: 'for',
-                description: '"We should do away with it and reform our elections.',
+                description: '"We should do away with it and reform our elections."',
             },
             {
                 name: 'smoulton',
@@ -356,8 +356,8 @@ export default [
             },
             {
                 name: 'tryan',
-                status: 'against',
-                description: '',
+                status: 'mixed',
+                description: 'According to a campaign spokesman, Ryan is open to abolishing the Electoral College, but believes the focus should be on more important issues.',
             },
             {
                 name: 'bernie',
@@ -382,16 +382,16 @@ export default [
             {
                 name: 'ayang',
                 status: 'against',
-                description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
+                description: '"Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
             },
             {
                 name: 'sbullock',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
             {
                 name: 'bdeblasio',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
         ]
@@ -408,8 +408,8 @@ export default [
             },
             {
                 name: 'mbennet',
-                status: 'none',
-                description: '',
+                status: 'against',
+                description: 'In response to being asked about other Democrats support for Supreme Court "packing," Bennet slammed his head on the table four times.',
             },
             {
                 name: 'jbiden',
@@ -418,112 +418,112 @@ export default [
             },
             {
                 name: 'cbooker',
-                status: 'against',
-                description: '"...In presidential elections, the person  with the most votes should be the President."',
+                status: 'mixed',
+                description: '"Our Supreme Court is way out of whack...I\'m not sure right now what the best way of accomplishing that balance is..."',
             },
             {
                 name: 'pbuttigieg',
                 status: 'for',
-                description: '"It\'s gotta go."',
+                description: '"So, we definitely need to do structural reform on the Supreme Court. Adding justices can be part of the solution but not in and of itself, it\'s not enough."',
             },
             {
                 name: 'jcastro',
-                status: 'for',
-                description: 'Tweeted support of dissolution, among other voter reforms.'
+                status: 'against',
+                description: 'Castro told The Post he does not support adding seats, but is open to other reforms.'
             },
             {
                 name: 'jdelaney',
                 status: 'against',
-                description: '"...trying to abolish the electoral college now is impractical.',
+                description: 'Delaney told The Post he does not support adding seats.',
             },
             {
                 name: 'tgabbard',
-                status: 'mixed',
-                description: 'Open to the conversation, believes there are pros and cons to the system.',
+                status: 'unknown',
+                description: 'Gabbard has not addressed this issue',
             },
             {
                 name: 'kgillibrand',
-                status: 'for',
-                description: 'Unknown',
+                status: 'mixed',
+                description: 'Told Politico she is open to expansion.',
             },
             {
                 name: 'mgravel',
-                status: 'for',
-                description: 'Abolish Electoral College, replace weith a system of direct election.',
+                status: 'unknown',
+                description: 'Gravel has not addressed this issue.',
             },
             {
                 name: 'kharris',
                 status: 'mixed',
-                description: 'I\'m open to the discussion.',
+                description: '"We are on the verge of a crisis of confidence in the Supreme Court...We Have to take this challenge head on, and everything is on the table to fo that."',
             },
             {
                 name: 'jhickenlooper',
                 status: 'against',
-                description: '"...there is no possibility of aboloshing it...so we need to focus on expanding the Democratic electorate.',
+                description: '"I\'m concerned with the precedent it could set. As President I could add 5 seats but the next Republican president might then add 6 more." Hickenlooper is open to other Supreme Court reforms.',
             },
             {
                 name: 'jinslee',
-                status: 'for',
-                description: '"It ought to be one person, one vote."',
+                status: 'mixed',
+                description: '"We must be thoughtful and considerate about any changes to the Supreme Court...I\'m open to any ideas and discussion on how to [do that.]"',
             },
             {
                 name: 'aklobuchar',
-                status: 'mixed',
-                description: 'Told the Post she is "open to eliminating."',
+                status: 'against',
+                description: 'According to CBS News, Klobuchar\'s priority is getting qualified judges through the existing system.',
             },
             {
                 name: 'wmessam',
                 status: 'for',
-                description: '"We should do away with it and reform our elections.',
+                description: '"Make no mistake, the court is already packed. if Sen. McConnell chooses to play by a different set of rules, as he so often does, then so will I."',
             },
             {
                 name: 'smoulton',
-                status: 'for',
-                description: '"We need a New Voting Rights Act in America."',
+                status: 'mixed',
+                description: '"Court packing should be on the table...You dont show up to a gun fight with a knife. You try to show up with a rocket."',
             },
             {
                 name: 'borourke',
                 status: 'mixed',
-                description: 'Eliminate long-term, short-term award electors proportionally',
+                description: '"I think it\'s an idea we should explore. What if there were five justices selected by Democrats, five selected by Republicans, and those ten then picked five more justices..."',
             },
             {
                 name: 'tryan',
                 status: 'against',
-                description: '',
+                description: 'Told The Post he does not support adding seats to the Supreme Court.',
             },
             {
                 name: 'bernie',
-                status: 'mixed',
-                description: '"I believe that we need to reexamine the concept of the Electoral College."',
+                status: 'against',
+                description: '"Once the process of court packing starts, it could continue with each political party adding more judges when they have the power to do so."',
             },
             {
                 name: 'eswalwell',
-                status: 'none',
-                description: '',
+                status: 'against',
+                description: 'TOld The Post he would not consider it. "I don\'t want to let these extraordinary times that President Trump has created lead us to too many extraordinary remedies..."',
             },
             {
                 name: 'ewarren',
                 status: 'for',
-                description: '"Every vote matters - and that\'s why I have called for an end to the Electoral College..."',
+                description: '"It\'s not just about expansion, it\'s about depoliticizing the Supreme Court."',
             },
             {
                 name: 'mwilliamson',
-                status: 'for',
-                description: '"...at this point there is too much risk to our democracy when the popular vote can be so eaily overridden."',
+                status: 'against',
+                description: 'Told The Post she does not support adding seats.',
             },
             {
                 name: 'ayang',
-                status: 'against',
-                description: 'Abolishing the Electoral College would be difficult and would wind up further favoring high-density high-population areas..."',
+                status: 'mixed',
+                description: '"I don\'t believe it\'s something that should be ruled out...But I think other changes to the Supreme Court, such as imposing 18 year term limits, would be equally effective at making the court more modern and responsive..."',
             },
             {
                 name: 'sbullock',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
             {
                 name: 'bdeblasio',
-                status: '',
+                status: 'unknown',
                 description: '',
             },
         ]
